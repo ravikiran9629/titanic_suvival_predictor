@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import joblib
 
 # Load the transformations and the trained model
 with open('scaler.pkl', 'rb') as f:
-    scaler = joblib.load(f)
+    scaler = pickle.load(f)
 
 with open('ohe.pkl', 'rb') as f:
     OHE = pickle.load(f)
