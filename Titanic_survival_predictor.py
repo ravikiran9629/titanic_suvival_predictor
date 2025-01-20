@@ -1,5 +1,9 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as snb
+import sklearn
 import pickle
 
 # Load the transformations and the trained model
