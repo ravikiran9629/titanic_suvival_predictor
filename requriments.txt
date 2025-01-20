@@ -1,3 +1,7 @@
-1. pandas
-2. streamlit
-3. pickle
+pandas
+streamlit
+pickle
+sklearn
+matplotlib.pyplot
+seaborn
+numpy
