@@ -29,7 +29,7 @@ data = {
     'SibSp': [sibsp],
     'Parch': [parch],
     'Female': [1 if sex == 'female' else 0],
-    'Male': [1 if sex == 'Male' else 0],
+    #'Male': [1 if sex == 'Male' else 0],
     'C': [1 if embarked == 'Cherbourg' else 0],
     'Q': [1 if embarked == 'Queenstown' else 0],
     'S': [1 if embarked == 'SouthamptonS' else 0],
