@@ -43,11 +43,14 @@ input_data = pd.DataFrame(data,index=[0])
 # Standardize the input data
 input_data[['Age','Fare']] = scaler.transform(input_data[['Age','Fare']] )
 
+st.write("User-Provided Data")
+st.dataframe(input_data)
+
 # Predict
 survival_proba = loaded_model.predict_proba(input_data)
 
 st.write("User-Provided Data")
-st.dataframe(df)
+st.dataframe(input_data)
 
 
 if st.button("Show Result"):
