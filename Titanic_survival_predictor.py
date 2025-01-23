@@ -46,6 +46,9 @@ input_data[['Age','Fare']] = scaler.transform(input_data[['Age','Fare']] )
 # Predict
 survival_proba = loaded_model.predict_proba(input_data)
 
+st.write("User-Provided Data")
+st.dataframe(df)
+
 
 if st.button("Show Result"):
     # Code to execute after button click
