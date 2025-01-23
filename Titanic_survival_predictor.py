@@ -49,8 +49,6 @@ st.dataframe(input_data)
 # Predict
 survival_proba = loaded_model.predict_proba(input_data)
 
-st.write("User-Provided Data")
-st.dataframe(input_data)
 
 
 if st.button("Show Result"):
